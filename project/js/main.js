@@ -11,7 +11,7 @@ $(document).ready(function() {
 }) 
 
 function getWeather() {
-  var url = "https://api.openweathermap.org/data/2.5/weather?q={boston}&appid=" + apiKey;
+  var url = "https://api.openweathermap.org/data/2.5/weather?q=Boston&appid=" + apiKey;
   $.ajax(url, {success: function(data) {
     console.log(data);
   }})
