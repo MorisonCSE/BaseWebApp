@@ -12,6 +12,7 @@ $(document).ready(function() {
 
 function getWeather() {
   var url = "https://api.openweathermap.org/data/2.5/weather?q=Boston&appid=" + apiKey;
+  console.log(url);
   $.ajax(url, {success: function(data) {
     console.log(data);
   }})
